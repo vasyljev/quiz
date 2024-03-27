@@ -2,7 +2,7 @@ import React from 'react';
 import './Enter.css';
 
 const Enter = () => {
-  return <div>Enter</div>;
+  return <div className="Enter">Enter</div>;
 };
 
 export default Enter;

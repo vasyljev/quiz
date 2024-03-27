@@ -8,7 +8,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: red; /* Ваш колір фону */
     transition: transform 1s ease-in-out;
 }
 
@@ -25,7 +24,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: blue; /* Ваш колір фону для нової сторінки */
     transform: translateZ(-100px);
 }
 
