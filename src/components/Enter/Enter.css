@@ -1,5 +1,7 @@
 .Enter {
     width: 100%;
     height: 100%;
-    background-color: blue; /* Ваш колір фону для нової сторінки */
+    background-color: blue;
+    background-image: url("../../assets/images/hogwarts-library.jpg");
+    background-size: 100% auto;
 }

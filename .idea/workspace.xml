@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f6ed0cf-da68-4c45-b763-5dd6b5ac960e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Counter/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Enter/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Question/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/StartPage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Welcome/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Question/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Question/Question.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StartPage/StartPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StartPage/StartPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Enter/Enter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Enter/Enter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Welcome/Welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome/Welcome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Welcome/Welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome/Welcome.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +83,9 @@
       <recent name="$PROJECT_DIR$/src/components/StartPage" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/images" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -105,7 +103,7 @@
       <workItem from="1710235640718" duration="13000" />
       <workItem from="1711518865942" duration="3133000" />
       <workItem from="1711524958135" duration="2405000" />
-      <workItem from="1711604352731" duration="274000" />
+      <workItem from="1711604352731" duration="2941000" />
     </task>
     <servers />
   </component>
