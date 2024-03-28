@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './StartPage.css';
-import Welcome from '../Welcome/Welcome';
-import Enter from '../Enter/Enter';
+import Welcome from '../Welcome';
+import Enter from '../Enter';
 
 const StartPage = () => {
   const [pageClass, setPageClass] = useState('');

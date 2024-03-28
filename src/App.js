@@ -1,7 +1,7 @@
 import './App.css';
-import StartPage from './components/StartPage/StartPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Question from './components/Question/Question';
+import StartPage from './components/StartPage';
+import Question from './components/Question';
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Counter from '../Counter/Counter';
+import Counter from '../Counter';
 
 const Question = () => {
   const [showCounter, setShowCounter] = useState(true);
