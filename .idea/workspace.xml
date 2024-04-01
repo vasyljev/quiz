@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2f6ed0cf-da68-4c45-b763-5dd6b5ac960e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Enter/Enter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Enter/Enter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Welcome/Welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome/Welcome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Enter/Enter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Enter/Enter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Welcome/Welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome/Welcome.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,25 +57,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "code.cleanup.on.save": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/vassabigoldmann/Documents/Projects/React/quizz/src/components/Counter",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/vassabigoldmann/Documents/Projects/React/quizz/node_modules/prettier",
-    "settings.editor.selected.configurable": "editing.templates",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/vassabigoldmann/Documents/Projects/React/quizz/src/components/Counter&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/vassabigoldmann/Documents/Projects/React/quizz/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/Counter" />
@@ -103,7 +104,8 @@
       <workItem from="1710235640718" duration="13000" />
       <workItem from="1711518865942" duration="3133000" />
       <workItem from="1711524958135" duration="2405000" />
-      <workItem from="1711604352731" duration="2941000" />
+      <workItem from="1711604352731" duration="3590000" />
+      <workItem from="1711946307577" duration="2394000" />
     </task>
     <servers />
   </component>
