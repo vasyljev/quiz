@@ -15,7 +15,11 @@ const Counter = ({ setShowCounter }) => {
     }
   }, [count, setShowCounter]);
 
-  return <div>{count}</div>;
+  return (
+    <section className="Counter">
+      <p className="count-number">{count}</p>
+    </section>
+  );
 };
 
 export default Counter;

@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import './Enter.css';
 import { Button, Flex, Input } from '@chakra-ui/react';
+import { useNavigate } from 'react-router-dom';
 
 const Enter = () => {
   const [name, setName] = useState('');
+  const navigate = useNavigate();
 
   const storeNameAndRedirect = () => {
     console.log('name', name);
     localStorage.setItem('name', name);
+    navigate('question/1');
   };
 
   return (

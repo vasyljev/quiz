@@ -1,0 +1,29 @@
+.Counter {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/images/potions_class.png");
+    background-size: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.count-number {
+    font-size: 2rem;
+    animation: growNumber 1.9s ease-in-out infinite;
+}
+
+@keyframes growNumber {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    95% {
+        transform: scale(8);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
