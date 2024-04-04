@@ -8,7 +8,7 @@ const StartPage = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setPageClass('slide-away');
-    }, 3000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, []);

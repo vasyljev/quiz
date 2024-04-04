@@ -6,6 +6,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import VariantCard from '../VariantCard';
 
 const Question = () => {
+  const maxPageCount = 2;
   const navigate = useNavigate();
   const { number } = useParams();
   const [showCounter, setShowCounter] = useState(true);
@@ -31,12 +32,14 @@ const Question = () => {
   const redirectToNextQuestion = () => {
     console.log('redirectToNextQuestion', number);
     setTimeout(() => {
-      navigate(`/question/${+number + 1}`);
-      setTime(0);
-      setSelectedVariant(null);
-      setCorrectAnswer(null);
-      setShowCounter(true);
-    }, 3000);
+      if (number < maxPageCount) {
+        navigate(`/question/${+number + 1}`);
+        setTime(0);
+        setSelectedVariant(null);
+        setCorrectAnswer(null);
+        setShowCounter(true);
+      }
+    }, 4000);
   };
 
   useEffect(() => {
