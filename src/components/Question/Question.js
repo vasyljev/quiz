@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Counter from '../Counter';
 import './Question.css';
-import { Card, CardBody, Flex, Progress } from '@chakra-ui/react';
+import { Flex, Progress } from '@chakra-ui/react';
 import { useNavigate, useParams } from 'react-router-dom';
+import VariantCard from '../VariantCard';
 
 const Question = () => {
   const navigate = useNavigate();
   const { number } = useParams();
-
   const [showCounter, setShowCounter] = useState(true);
   const [time, setTime] = useState(0);
   const [selectedVariant, setSelectedVariant] = useState(null);
@@ -19,17 +19,13 @@ const Question = () => {
     console.log('variant', variant);
   };
 
+  // TODO: Move to useEffect
   const showCorrectAnswer = () => {
     setTimeout(() => {
       setCorrectAnswer('Variant 1');
       console.log('setCorrectAnswer');
       redirectToNextQuestion();
     }, 3000);
-  };
-
-  const getCardStatusClass = (variant) => {
-    if (!correctAnswer) return;
-    return correctAnswer === variant ? 'correct' : 'incorrect';
   };
 
   const redirectToNextQuestion = () => {
@@ -63,15 +59,13 @@ const Question = () => {
   if (showCounter) return <Counter setShowCounter={setShowCounter} />;
 
   const variants = ['Variant 1', 'Variant 2', 'Variant 3', 'Variant 4'].map((v) => (
-    <Card
-      className={`question-variant ${selectedVariant === v ? 'active' : ''} ${getCardStatusClass(v)}`}
+    <VariantCard
       key={v}
-      onClick={() => selectVariant(v)}
-    >
-      <CardBody>
-        <p>{v}</p>
-      </CardBody>
-    </Card>
+      variant={v}
+      selectedVariant={selectedVariant}
+      correctAnswer={correctAnswer}
+      selectVariant={selectVariant}
+    ></VariantCard>
   ));
 
   return (
