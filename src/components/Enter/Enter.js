@@ -26,7 +26,7 @@ const Enter = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <Button colorScheme="green" size="md" onClick={storeNameAndRedirect}>
+          <Button colorScheme="green" size="lg" onClick={storeNameAndRedirect}>
             Start
           </Button>
         </Flex>

@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f6ed0cf-da68-4c45-b763-5dd6b5ac960e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/USH_Hogwarts2_VB.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/potions_class.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/hogwarts-library.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Counter/Counter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Counter/Counter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Counter/Counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Counter/Counter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Enter/Enter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Enter/Enter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Question/Question.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Question/Question.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Question/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Question/Question.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Welcome/Welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome/Welcome.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +105,10 @@
       <workItem from="1711524958135" duration="2405000" />
       <workItem from="1711604352731" duration="3590000" />
       <workItem from="1711946307577" duration="4552000" />
-      <workItem from="1711958987036" duration="3219000" />
+      <workItem from="1711958987036" duration="3272000" />
+      <workItem from="1712118385893" duration="3596000" />
+      <workItem from="1712122489212" duration="48000" />
+      <workItem from="1712205673115" duration="2092000" />
     </task>
     <servers />
   </component>
