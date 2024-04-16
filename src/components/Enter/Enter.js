@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Enter.css';
 import { Button, Flex, Input } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
+import questionsService from '../../services/QuestionsService';
 
 const Enter = () => {
   const [name, setName] = useState('');
@@ -10,7 +11,10 @@ const Enter = () => {
   const storeNameAndRedirect = () => {
     console.log('name', name);
     localStorage.setItem('name', name);
-    navigate('question/1');
+    questionsService.getQuestions().then((questions) => {
+      localStorage.setItem('questions', JSON.stringify(questions));
+      navigate('question/1');
+    });
   };
 
   return (

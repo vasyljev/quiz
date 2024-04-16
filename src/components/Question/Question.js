@@ -13,6 +13,8 @@ const Question = () => {
   const [time, setTime] = useState(0);
   const [selectedVariant, setSelectedVariant] = useState(null);
   const [correctAnswer, setCorrectAnswer] = useState(null);
+  const [currentQuestion, setCurrentQuestion] = useState(null);
+  const [variants, setVariants] = useState([]);
 
   const selectVariant = (variant) => {
     if (selectedVariant) return;
@@ -23,7 +25,7 @@ const Question = () => {
   // TODO: Move to useEffect
   const showCorrectAnswer = () => {
     setTimeout(() => {
-      setCorrectAnswer('Variant 1');
+      setCorrectAnswer(currentQuestion.correctAnswer);
       console.log('setCorrectAnswer');
       redirectToNextQuestion();
     }, 3000);
@@ -43,6 +45,25 @@ const Question = () => {
   };
 
   useEffect(() => {
+    const questions = JSON.parse(localStorage.getItem('questions'));
+    const question = questions[number - 1];
+    setCurrentQuestion(question);
+    console.log('questions', questions, question, number);
+    const { correctAnswer: answer, incorrectAnswers } = question;
+    setVariants(
+      [...incorrectAnswers, answer].map((v) => (
+        <VariantCard
+          key={v}
+          variant={v}
+          selectedVariant={selectedVariant}
+          correctAnswer={correctAnswer}
+          selectVariant={selectVariant}
+        ></VariantCard>
+      )),
+    );
+  }, []);
+
+  useEffect(() => {
     if (!showCounter) {
       const interval = setInterval(() => {
         if (time >= 100) {
@@ -57,19 +78,9 @@ const Question = () => {
 
       return () => clearInterval(interval);
     }
-  }, [showCounter, time, showCorrectAnswer]);
+  }, [showCounter, time, showCorrectAnswer, setVariants]);
 
   if (showCounter) return <Counter setShowCounter={setShowCounter} />;
-
-  const variants = ['Variant 1', 'Variant 2', 'Variant 3', 'Variant 4'].map((v) => (
-    <VariantCard
-      key={v}
-      variant={v}
-      selectedVariant={selectedVariant}
-      correctAnswer={correctAnswer}
-      selectVariant={selectVariant}
-    ></VariantCard>
-  ));
 
   return (
     <section className="Question">
@@ -83,7 +94,7 @@ const Question = () => {
       >
         {variants}
       </Flex>
-      <p className="question-text">Question Text</p>
+      <p className="question-text">{currentQuestion?.question?.text}</p>
     </section>
   );
 };
