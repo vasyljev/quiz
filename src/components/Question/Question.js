@@ -16,20 +16,17 @@ const Question = () => {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [variants, setVariants] = useState([]);
 
-  const selectVariant = (variant) => {
-    if (selectedVariant) return;
-    setSelectedVariant(variant);
-    console.log('variant', variant);
-  };
-
   // TODO: Move to useEffect
   const showCorrectAnswer = () => {
     setTimeout(() => {
       setCorrectAnswer(currentQuestion.correctAnswer);
       console.log('setCorrectAnswer');
+      setNumberOfCurrentAnswers();
       redirectToNextQuestion();
     }, 3000);
   };
+
+  const setNumberOfCurrentAnswers = () => {};
 
   const redirectToNextQuestion = () => {
     console.log('redirectToNextQuestion', number);
@@ -45,6 +42,12 @@ const Question = () => {
   };
 
   useEffect(() => {
+    const selectVariant = (variant) => {
+      if (selectedVariant) return;
+      setSelectedVariant(variant);
+      console.log('variant', variant);
+    };
+
     const questions = JSON.parse(localStorage.getItem('questions'));
     const question = questions[number - 1];
     setCurrentQuestion(question);
@@ -61,7 +64,7 @@ const Question = () => {
         ></VariantCard>
       )),
     );
-  }, []);
+  }, [selectedVariant, correctAnswer]);
 
   useEffect(() => {
     if (!showCounter) {
@@ -78,7 +81,7 @@ const Question = () => {
 
       return () => clearInterval(interval);
     }
-  }, [showCounter, time, showCorrectAnswer, setVariants]);
+  }, [showCounter, time, setVariants]);
 
   if (showCounter) return <Counter setShowCounter={setShowCounter} />;
 
