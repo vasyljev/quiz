@@ -16,7 +16,15 @@ const Question = () => {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [variants, setVariants] = useState([]);
 
-  // TODO: Move to useEffect
+  const resetState = () => {
+    setTime(0);
+    setSelectedVariant(null);
+    setCorrectAnswer(null);
+    setShowCounter(true);
+    setCurrentQuestion(null);
+    setVariants([]);
+  };
+
   const showCorrectAnswer = () => {
     setTimeout(() => {
       setCorrectAnswer(currentQuestion.correctAnswer);
@@ -26,18 +34,24 @@ const Question = () => {
     }, 3000);
   };
 
-  const setNumberOfCurrentAnswers = () => {};
+  const setNumberOfCurrentAnswers = () => {
+    const currentAnswersNumber = JSON.parse(localStorage.getItem('answers')) || 0;
+    console.log('setNumberOfCurrentAnswers', currentAnswersNumber, currentQuestion.correctAnswer, selectedVariant);
+    localStorage.setItem(
+      'answers',
+      `${currentQuestion.correctAnswer === selectedVariant ? currentAnswersNumber + 1 : currentAnswersNumber}`,
+    );
+  };
 
   const redirectToNextQuestion = () => {
     console.log('redirectToNextQuestion', number);
     setTimeout(() => {
       if (number < maxPageCount) {
         navigate(`/question/${+number + 1}`);
-        setTime(0);
-        setSelectedVariant(null);
-        setCorrectAnswer(null);
-        setShowCounter(true);
+        resetState();
+        return;
       }
+      navigate('/score');
     }, 4000);
   };
 
