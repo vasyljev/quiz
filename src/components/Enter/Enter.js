@@ -20,9 +20,11 @@ const Enter = () => {
   return (
     <section className="Enter">
       <Flex align="center" justify="center" direction="column" pt={200}>
-        <h2 className="title">Text</h2>
         <Flex className="input-block" align="center" justify="center" direction="column">
-          <p className="main-text">Please enter your name to start this magic quiz</p>
+          <p className="main-text">
+            Enter your name, O seeker of lore! To unlock the secrets behind the door. Scribe your identity with an
+            enchanted quill, and prepare to climb the wizard's hill.
+          </p>
           <Input
             placeholder="Enter your name"
             size="lg"

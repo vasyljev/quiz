@@ -6,9 +6,10 @@ import Enter from '../Enter';
 const StartPage = () => {
   const [pageClass, setPageClass] = useState('');
   useEffect(() => {
+    localStorage.clear();
     const timer = setTimeout(() => {
       setPageClass('slide-away');
-    }, 4000);
+    }, 15000);
 
     return () => clearTimeout(timer);
   }, []);
