@@ -1,19 +1,19 @@
 .GameScore {
     width: 100%;
     height: 100%;
-    background-color: black;
-    background-image: url("../../assets/images/USH_Wands_VB.jpg");
-    background-size: auto 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),  url("../../assets/images/USH_Wands_VB.jpg");
+    background-size: cover;
     color: white;
 }
 
 .title {
-    font-size: 24px;
+    font-size: 34px;
     font-weight: 600;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .main-text {
-    font-size: 24px;
+    font-size: 40px;
     margin-bottom: 24px;
+    max-width: 1000px;
 }

@@ -11,9 +11,11 @@ const VariantCard = ({ variant, correctAnswer, selectedVariant, selectVariant })
     <Card
       className={`question-variant ${selectedVariant === variant ? 'active' : ''} ${getCardStatusClass()}`}
       key={variant}
+      align={'center'}
+      justify={'center'}
       onClick={() => selectVariant(variant)}
     >
-      <CardBody>
+      <CardBody alignItems={'center'} justifySelf={'center'}>
         <p>{variant}</p>
       </CardBody>
     </Card>

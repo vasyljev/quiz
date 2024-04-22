@@ -3,20 +3,28 @@ import Counter from '../Counter';
 import './Question.css';
 import { Flex, Progress } from '@chakra-ui/react';
 import { useNavigate, useParams } from 'react-router-dom';
-import VariantCard from '../VariantCard';
 import { randomSort } from '../../utils/rundom-sort';
+import VariantCard from '../VariantCard';
 
 const Question = () => {
   const maxPageCount = 2;
   const navigate = useNavigate();
-  const { number } = useParams();
+  const { number: questionNumber } = useParams();
   const [showCounter, setShowCounter] = useState(true);
   const [time, setTime] = useState(0);
   const [selectedVariant, setSelectedVariant] = useState(null);
   const [correctAnswer, setCorrectAnswer] = useState(null);
   const [currentQuestion, setCurrentQuestion] = useState(null);
-  const [variants, setVariants] = useState([]);
-  let sortedVariants = [];
+  const [sortedVariants, setSortedVariants] = useState([]);
+
+  const initData = () => {
+    const questions = JSON.parse(localStorage.getItem('questions'));
+    const question = questions[questionNumber - 1];
+    setCurrentQuestion(question);
+    console.log('questions', questions, question, questionNumber);
+    const { correctAnswer: answer, incorrectAnswers } = question;
+    setSortedVariants(randomSort([...incorrectAnswers, answer]));
+  };
 
   const resetState = () => {
     setTime(0);
@@ -24,12 +32,12 @@ const Question = () => {
     setCorrectAnswer(null);
     setShowCounter(true);
     setCurrentQuestion(null);
-    setVariants([]);
+    setSortedVariants([]);
   };
 
   const showCorrectAnswer = () => {
     setTimeout(() => {
-      setCorrectAnswer(currentQuestion.correctAnswer);
+      setCorrectAnswer(currentQuestion?.correctAnswer);
       console.log('setCorrectAnswer');
       setNumberOfCurrentAnswers();
       redirectToNextQuestion();
@@ -46,10 +54,9 @@ const Question = () => {
   };
 
   const redirectToNextQuestion = () => {
-    console.log('redirectToNextQuestion', number);
     setTimeout(() => {
-      if (number < maxPageCount) {
-        navigate(`/question/${+number + 1}`);
+      if (questionNumber < maxPageCount) {
+        navigate(`/question/${+questionNumber + 1}`);
         resetState();
         return;
       }
@@ -57,33 +64,23 @@ const Question = () => {
     }, 4000);
   };
 
-  useEffect(() => {
-    const questions = JSON.parse(localStorage.getItem('questions'));
-    const question = questions[number - 1];
-    setCurrentQuestion(question);
-    console.log('questions', questions, question, number);
-    const { correctAnswer: answer, incorrectAnswers } = question;
-    sortedVariants = randomSort([...incorrectAnswers, answer]);
-  }, []);
-
-  useEffect(() => {
+  const buildVariantsView = () => {
     const selectVariant = (variant) => {
       if (selectedVariant) return;
       setSelectedVariant(variant);
-      console.log('variant', variant);
     };
-    setVariants(
-      sortedVariants.map((v) => (
-        <VariantCard
-          key={v}
-          variant={v}
-          selectedVariant={selectedVariant}
-          correctAnswer={correctAnswer}
-          selectVariant={selectVariant}
-        ></VariantCard>
-      )),
-    );
-  }, [selectedVariant, correctAnswer]);
+    return sortedVariants.map((v) => (
+      <VariantCard
+        key={v}
+        variant={v}
+        selectedVariant={selectedVariant}
+        correctAnswer={correctAnswer}
+        selectVariant={selectVariant}
+      ></VariantCard>
+    ));
+  };
+
+  useEffect(() => initData(), [questionNumber]);
 
   useEffect(() => {
     if (!showCounter) {
@@ -100,9 +97,11 @@ const Question = () => {
 
       return () => clearInterval(interval);
     }
-  }, [showCounter, time, setVariants]);
+  }, [showCounter, time]);
 
   if (showCounter) return <Counter setShowCounter={setShowCounter} />;
+
+  const variants = buildVariantsView();
 
   return (
     <section className="Question">
@@ -115,7 +114,6 @@ const Question = () => {
         mb="50px"
       >
         {variants}
-        {/*{variants}*/}
       </Flex>
       <p className="question-text">{currentQuestion?.question?.text}</p>
     </section>

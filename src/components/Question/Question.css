@@ -42,24 +42,20 @@
     width: calc(100% / 4 - 10px);
     min-height: 100px;
     cursor: pointer;
+    font-size: 34px !important;
 }
 
 .incorrect {
-    color: white !important;
-    background-color: red !important;
+    color: red !important;
 }
 
 .correct {
-    color: white !important;
-    background-color: green !important;
+    color: green !important;
+    font-weight: 500;
 }
 
 .question-variant.active {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-.incorrect.active {
-    opacity: 0.8;
+    border: 2px #1205ad solid;
 }
 
 
