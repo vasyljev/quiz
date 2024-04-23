@@ -17,6 +17,7 @@ const Question = () => {
   const [correctAnswer, setCorrectAnswer] = useState(null);
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [sortedVariants, setSortedVariants] = useState([]);
+  const [timerStep, setTimerStep] = useState(0.1);
 
   const initData = () => {
     const questions = StorageService.questions;
@@ -39,10 +40,9 @@ const Question = () => {
   const showCorrectAnswer = () => {
     setTimeout(() => {
       setCorrectAnswer(currentQuestion?.correctAnswer);
-      console.log('setCorrectAnswer');
       setNumberOfCurrentAnswers();
       redirectToNextQuestion();
-    }, 3000);
+    }, 2000);
   };
 
   const setNumberOfCurrentAnswers = () => {
@@ -67,6 +67,7 @@ const Question = () => {
     const selectVariant = (variant) => {
       if (selectedVariant) return;
       setSelectedVariant(variant);
+      setTimerStep(10);
     };
     return sortedVariants.map((v) => (
       <VariantCard
@@ -90,13 +91,13 @@ const Question = () => {
           return;
         }
         setTime((prevTime) => {
-          return prevTime + 0.1;
+          return prevTime + timerStep;
         });
       }, 20);
 
       return () => clearInterval(interval);
     }
-  }, [showCounter, time]);
+  }, [showCounter, time, timerStep]);
 
   if (showCounter) return <Counter setShowCounter={setShowCounter} />;
 
