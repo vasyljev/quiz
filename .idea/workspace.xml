@@ -6,20 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2f6ed0cf-da68-4c45-b763-5dd6b5ac960e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Counter/Counter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Counter/Counter.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Counter/Counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Counter/Counter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Enter/Enter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Enter/Enter.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Enter/Enter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Enter/Enter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GameScore/GameScore.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameScore/GameScore.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GameScore/GameScore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameScore/GameScore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Question/Question.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Question/Question.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Question/Question.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Question/Question.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Question/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Question/Question.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StartPage/StartPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StartPage/StartPage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StartPage/StartPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StartPage/StartPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VariantCard/VariantCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VariantCard/VariantCard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Welcome/Welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome/Welcome.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Welcome/Welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome/Welcome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/QuestionsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/QuestionsService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/StorageService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/StorageService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
