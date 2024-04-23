@@ -16,7 +16,7 @@ class StorageService {
   }
 
   get correctAnswersNumber() {
-    return JSON.parse(localStorage.getItem('answers')) || 0;
+    return +JSON.parse(localStorage.getItem('answers')) || 0;
   }
 
   set correctAnswersNumber(number) {

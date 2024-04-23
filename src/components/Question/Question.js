@@ -48,7 +48,8 @@ const Question = () => {
   const setNumberOfCurrentAnswers = () => {
     const currentAnswersNumber = StorageService.correctAnswersNumber;
     console.log('setNumberOfCurrentAnswers', currentAnswersNumber, currentQuestion.correctAnswer, selectedVariant);
-    StorageService.correctAnswersNumber = `${currentQuestion.correctAnswer === selectedVariant ? currentAnswersNumber + 1 : currentAnswersNumber}`;
+    StorageService.correctAnswersNumber =
+      currentQuestion.correctAnswer === selectedVariant ? currentAnswersNumber + 1 : currentAnswersNumber;
   };
 
   const redirectToNextQuestion = () => {

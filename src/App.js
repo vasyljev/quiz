@@ -1,19 +1,23 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import StartPage from './components/StartPage';
-import Question from './components/Question';
 import { ChakraProvider } from '@chakra-ui/react';
-import GameScore from './components/GameScore';
+import { lazy, Suspense } from 'react';
+
+const StartPage = lazy(() => import('./components/StartPage'));
+const Question = lazy(() => import('./components/Question'));
+const GameScore = lazy(() => import('./components/GameScore'));
 
 function App() {
   return (
     <ChakraProvider>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<StartPage />} />
-          <Route path="/question/:number" element={<Question />} />
-          <Route path="/score" element={<GameScore />} />
-        </Routes>
+        <Suspense>
+          <Routes>
+            <Route path="/" element={<StartPage />} />
+            <Route path="/question/:number" element={<Question />} />
+            <Route path="/score" element={<GameScore />} />
+          </Routes>
+        </Suspense>
       </BrowserRouter>
     </ChakraProvider>
   );
