@@ -5,6 +5,7 @@ import { Flex, Progress } from '@chakra-ui/react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { randomSort } from '../../utils/rundom-sort';
 import VariantCard from '../VariantCard';
+import StorageService from '../../services/StorageService';
 
 const Question = () => {
   const maxPageCount = 2;
@@ -18,7 +19,7 @@ const Question = () => {
   const [sortedVariants, setSortedVariants] = useState([]);
 
   const initData = () => {
-    const questions = JSON.parse(localStorage.getItem('questions'));
+    const questions = StorageService.questions;
     const question = questions[questionNumber - 1];
     setCurrentQuestion(question);
     console.log('questions', questions, question, questionNumber);
@@ -45,12 +46,9 @@ const Question = () => {
   };
 
   const setNumberOfCurrentAnswers = () => {
-    const currentAnswersNumber = JSON.parse(localStorage.getItem('answers')) || 0;
+    const currentAnswersNumber = StorageService.correctAnswersNumber;
     console.log('setNumberOfCurrentAnswers', currentAnswersNumber, currentQuestion.correctAnswer, selectedVariant);
-    localStorage.setItem(
-      'answers',
-      `${currentQuestion.correctAnswer === selectedVariant ? currentAnswersNumber + 1 : currentAnswersNumber}`,
-    );
+    StorageService.correctAnswersNumber = `${currentQuestion.correctAnswer === selectedVariant ? currentAnswersNumber + 1 : currentAnswersNumber}`;
   };
 
   const redirectToNextQuestion = () => {
