@@ -35,6 +35,7 @@ const Question = () => {
     setShowCounter(true);
     setCurrentQuestion(null);
     setSortedVariants([]);
+    setTimerStep(0.1);
   };
 
   const showCorrectAnswer = () => {

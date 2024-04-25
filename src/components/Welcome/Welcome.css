@@ -26,6 +26,7 @@
 }
 
 .Welcome .main-text {
+    font-family: "Lugrasimo", cursive !important;
     font-size: 45px;
     margin-bottom: 0;
     max-width: 700px;
