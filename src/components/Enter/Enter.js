@@ -13,6 +13,7 @@ const Enter = () => {
     console.log('name', name);
     StorageService.userName = name;
     questionsService.getQuestions().then((questions) => {
+      questions.length = 5;
       StorageService.questions = questions;
       navigate('question/1');
     });
@@ -28,6 +29,7 @@ const Enter = () => {
           </p>
           <Input
             placeholder="Enter your name"
+            _placeholder={{ opacity: 1, color: 'white' }}
             size="lg"
             mb={5}
             value={name}

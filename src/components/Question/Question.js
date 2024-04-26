@@ -8,7 +8,7 @@ import VariantCard from '../VariantCard';
 import StorageService from '../../services/StorageService';
 
 const Question = () => {
-  const maxPageCount = 2;
+  let maxPageCount = 5;
   const navigate = useNavigate();
   const { number: questionNumber } = useParams();
   const [showCounter, setShowCounter] = useState(true);
@@ -21,6 +21,7 @@ const Question = () => {
 
   const initData = () => {
     const questions = StorageService.questions;
+    maxPageCount = questions?.length;
     const question = questions[questionNumber - 1];
     setCurrentQuestion(question);
     console.log('questions', questions, question, questionNumber);
@@ -48,7 +49,6 @@ const Question = () => {
 
   const setNumberOfCurrentAnswers = () => {
     const currentAnswersNumber = StorageService.correctAnswersNumber;
-    console.log('setNumberOfCurrentAnswers', currentAnswersNumber, currentQuestion.correctAnswer, selectedVariant);
     StorageService.correctAnswersNumber =
       currentQuestion.correctAnswer === selectedVariant ? currentAnswersNumber + 1 : currentAnswersNumber;
   };

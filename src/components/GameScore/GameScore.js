@@ -10,16 +10,31 @@ const GameScore = () => {
   const [resultText, setResultText] = useState('');
 
   const setTextAccordingToResult = () => {
-    const result = StorageService.correctAnswersNumber;
+    const percentage = (questionsNumber / score) * 100;
     switch (true) {
-      case result <= 3:
-        setResultText('');
+      case percentage <= 20:
+        setResultText(
+          "Alas, young wizard, your journey's just begun,\n" +
+            'With spells to learn and battles to be won.\n' +
+            'Your score whispers of potential yet to find,\n' +
+            'Fear not, for greatness takes time to bind.\n',
+        );
         break;
-      case result > 3 && result <= 7:
-        setResultText('');
+      case percentage > 20 && percentage <= 70:
+        setResultText(
+          'Well met, apprentice of the arcane arts,\n' +
+            'Your score reflects a heart that bravely starts.\n' +
+            'A commendable feat, with much room to grow,\n' +
+            'In the dance of enchantments and magical flow.\n',
+        );
         break;
-      case result > 7:
-        setResultText('');
+      case percentage > 70:
+        setResultText(
+          'Huzzah! A master of the wizarding lore,\n' +
+            'Your score soars high, with myths to explore.\n' +
+            'In the annals of Hogwarts, your name shall gleam,\n' +
+            "A champion of magic, a sorcerer's dream.\n",
+        );
         break;
       default:
         setResultText('');
@@ -37,12 +52,8 @@ const GameScore = () => {
     <section className="GameScore">
       <Flex align="center" justify="center" direction="column" pt={200}>
         <h2 className="title">{name}!</h2>
-        <Flex className="input-block" align="center" justify="center" direction="column">
-          <p className="main-text">
-            {resultText}
-            Behold your score, woven by fate's own hand, A testament to where your knowledge stands. In the grand
-            tapestry of spell and charm, Your intellect has proven to be strong and warm.
-          </p>
+        <Flex className="text-block" align="center" justify="center" direction="column">
+          <p className="main-text">{resultText}</p>
           <p className="main-text">
             {score} / {questionsNumber}
           </p>
