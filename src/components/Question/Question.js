@@ -105,7 +105,7 @@ const Question = () => {
   const variants = buildVariantsView();
 
   return (
-    <section className="Question">
+    <section className="Question w-full h-full">
       <Progress value={time} className="timer" mb="24px" />
       <Flex
         className={`questions-container ${time >= 100 && !selectedVariant ? 'disabled' : ''} ${correctAnswer ? 'transparent' : ''}`}

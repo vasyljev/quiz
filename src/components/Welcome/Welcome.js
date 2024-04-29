@@ -3,8 +3,8 @@ import './Welcome.css';
 
 const Welcome = () => {
   return (
-    <section className="Welcome">
-      <div className="text-block">
+    <section className="Welcome w-full h-full bg-white flex flex-col justify-between items-center">
+      <div className="flex flex-col items-center">
         <h3 className="title">Hogwarts Quiz!</h3>
         <h1 className="main-text">
           Welcome, brave soul, to the hallowed halls of Hogwarts! Here, magic breathes and dreams take flight. Embark on

@@ -49,7 +49,7 @@ const GameScore = () => {
     setTextAccordingToResult();
   }, []);
   return (
-    <section className="GameScore">
+    <section className="GameScore w-full h-full">
       <Flex align="center" justify="center" direction="column" pt={200}>
         <h2 className="title">{name}!</h2>
         <Flex className="text-block" align="center" justify="center" direction="column">
