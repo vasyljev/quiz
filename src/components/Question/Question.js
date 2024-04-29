@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Counter from '../Counter';
-import './Question.css';
+import './Question.scss';
 import { Flex, Progress } from '@chakra-ui/react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { randomSort } from '../../utils/rundom-sort';
@@ -24,7 +24,6 @@ const Question = () => {
     maxPageCount = questions?.length;
     const question = questions[questionNumber - 1];
     setCurrentQuestion(question);
-    console.log('questions', questions, question, questionNumber);
     const { correctAnswer: answer, incorrectAnswers } = question;
     setSortedVariants(randomSort([...incorrectAnswers, answer]));
   };

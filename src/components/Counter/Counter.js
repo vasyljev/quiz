@@ -1,4 +1,4 @@
-import './Counter.css';
+import './Counter.scss';
 import React, { useEffect, useState } from 'react';
 
 const Counter = ({ setShowCounter }) => {

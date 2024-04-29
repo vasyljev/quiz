@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './StartPage.css';
+import './StartPage.scss';
 import Welcome from '../Welcome';
 import Enter from '../Enter';
 

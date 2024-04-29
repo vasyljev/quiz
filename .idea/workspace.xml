@@ -5,18 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f6ed0cf-da68-4c45-b763-5dd6b5ac960e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/input.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GameScore/GameScore.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameScore/GameScore.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Counter/Counter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Counter/Counter.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Counter/Counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Counter/Counter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Enter/Enter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Enter/Enter.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Enter/Enter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Enter/Enter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GameScore/GameScore.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameScore/GameScore.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GameScore/GameScore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameScore/GameScore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Question/Question.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Question/Question.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Question/Question.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Question/Question.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Question/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Question/Question.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Welcome/Welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome/Welcome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StartPage/StartPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StartPage/StartPage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StartPage/StartPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StartPage/StartPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VariantCard/VariantCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VariantCard/VariantCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Welcome/Welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome/Welcome.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Welcome/Welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome/Welcome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/QuestionsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/QuestionsService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +134,7 @@
       <workItem from="1714019993980" duration="4161000" />
       <workItem from="1714105601140" duration="3789000" />
       <workItem from="1714111600918" duration="4000" />
-      <workItem from="1714365072524" duration="2070000" />
+      <workItem from="1714365072524" duration="3397000" />
     </task>
     <servers />
   </component>

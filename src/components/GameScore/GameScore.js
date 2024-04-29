@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './GameScore.css';
+import './GameScore.scss';
 import { Flex } from '@chakra-ui/react';
 import StorageService from '../../services/StorageService';
 
@@ -10,7 +10,7 @@ const GameScore = () => {
   const [resultText, setResultText] = useState('');
 
   const setTextAccordingToResult = () => {
-    const percentage = (questionsNumber / score) * 100;
+    const percentage = (score / questionsNumber) * 100;
     switch (true) {
       case percentage <= 20:
         setResultText(

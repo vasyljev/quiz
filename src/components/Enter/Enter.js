@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Enter.css';
+import './Enter.scss';
 import { Button, Flex, Input } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 import questionsService from '../../services/QuestionsService';
@@ -10,7 +10,6 @@ const Enter = () => {
   const navigate = useNavigate();
 
   const storeNameAndRedirect = () => {
-    console.log('name', name);
     StorageService.userName = name;
     questionsService.getQuestions().then((questions) => {
       questions.length = 5;
