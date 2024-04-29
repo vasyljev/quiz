@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f6ed0cf-da68-4c45-b763-5dd6b5ac960e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/services/MediaService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Question/Question.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Question/Question.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Question/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Question/Question.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/StorageService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/StorageService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,11 +121,35 @@
       <workItem from="1714019993980" duration="4161000" />
       <workItem from="1714105601140" duration="3789000" />
       <workItem from="1714111600918" duration="4000" />
-      <workItem from="1714365072524" duration="3397000" />
+      <workItem from="1714365072524" duration="3721000" />
     </task>
+    <task id="LOCAL-00001" summary="Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)">
+      <option name="closed" value="true" />
+      <created>1714369174317</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714369174317</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)" />
   </component>
 </project>
