@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f6ed0cf-da68-4c45-b763-5dd6b5ac960e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/services/MediaService.js" afterDir="false" />
+    <list default="true" id="2f6ed0cf-da68-4c45-b763-5dd6b5ac960e" name="Changes" comment="Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/audio/main-theme.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/public/main-theme.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Enter/Enter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Enter/Enter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GameScore/GameScore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameScore/GameScore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/MediaService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/MediaService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,33 +58,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vassabigoldmann/Documents/Projects/React/quizz/src/services&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/vassabigoldmann/Documents/Projects/React/quizz/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "code.cleanup.on.save": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/vassabigoldmann/Documents/Projects/React/quizz/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/vassabigoldmann/Documents/Projects/React/quizz/node_modules/prettier",
+    "settings.editor.selected.configurable": "editing.templates",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/services" />
       <recent name="$PROJECT_DIR$/src/components/Counter" />
       <recent name="$PROJECT_DIR$/src/components/Enter" />
       <recent name="$PROJECT_DIR$/src/components/Question" />
-      <recent name="$PROJECT_DIR$/src/components/StartPage" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/images" />
@@ -122,6 +126,8 @@
       <workItem from="1714105601140" duration="3789000" />
       <workItem from="1714111600918" duration="4000" />
       <workItem from="1714365072524" duration="3721000" />
+      <workItem from="1714370754897" duration="45000" />
+      <workItem from="1714451135001" duration="3502000" />
     </task>
     <task id="LOCAL-00001" summary="Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)">
       <option name="closed" value="true" />

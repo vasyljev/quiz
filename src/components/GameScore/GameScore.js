@@ -9,8 +9,8 @@ const GameScore = () => {
   const [name, setName] = useState('');
   const [resultText, setResultText] = useState('');
 
-  const setTextAccordingToResult = () => {
-    const percentage = (score / questionsNumber) * 100;
+  const setTextAccordingToResult = (scoreValue, setQuestionsNumberValue) => {
+    const percentage = (scoreValue / setQuestionsNumberValue) * 100;
     switch (true) {
       case percentage <= 20:
         setResultText(
@@ -43,10 +43,12 @@ const GameScore = () => {
   };
 
   useEffect(() => {
-    setScore(StorageService.correctAnswersNumber);
-    setQuestionsNumber(StorageService.questions?.length);
+    const scoreValue = StorageService.correctAnswersNumber;
+    const setQuestionsNumberValue = StorageService.questions?.length;
+    setScore(scoreValue);
+    setQuestionsNumber(setQuestionsNumberValue);
     setName(StorageService.userName);
-    setTextAccordingToResult();
+    setTextAccordingToResult(scoreValue, setQuestionsNumberValue);
   }, []);
   return (
     <section className="GameScore w-full h-full">
