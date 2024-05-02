@@ -1,11 +1,11 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
-import { lazy, Suspense } from 'react';
+import { Suspense } from 'react';
+import { AnimatePresence } from 'framer-motion';
+import RoutesWithAnimation from './components/RoutesWithAnimation';
 
-const StartPage = lazy(() => import('./components/StartPage'));
-const Question = lazy(() => import('./components/Question'));
-const GameScore = lazy(() => import('./components/GameScore'));
+const LocationProvider = ({ children }) => <AnimatePresence>{children}</AnimatePresence>;
 
 function App() {
   return (
@@ -13,11 +13,9 @@ function App() {
       <ChakraProvider>
         <BrowserRouter>
           <Suspense>
-            <Routes>
-              <Route path="/" element={<StartPage />} />
-              <Route path="/question/:number" element={<Question />} />
-              <Route path="/score" element={<GameScore />} />
-            </Routes>
+            <LocationProvider>
+              <RoutesWithAnimation />
+            </LocationProvider>
           </Suspense>
         </BrowserRouter>
       </ChakraProvider>
