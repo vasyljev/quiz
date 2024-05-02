@@ -4,7 +4,6 @@ import { Button, Flex, Input } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 import questionsService from '../../services/QuestionsService';
 import StorageService from '../../services/StorageService';
-import mediaService from '../../services/MediaService';
 
 const Enter = () => {
   const [name, setName] = useState('');
@@ -15,7 +14,6 @@ const Enter = () => {
     questionsService.getQuestions().then((questions) => {
       questions.length = 5;
       StorageService.questions = questions;
-      mediaService.playMainTheme();
       navigate('question/1');
     });
   };

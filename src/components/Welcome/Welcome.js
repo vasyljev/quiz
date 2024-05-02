@@ -1,7 +1,8 @@
 import React from 'react';
 import './Welcome.scss';
+import { ArrowRightIcon } from '@chakra-ui/icons';
 
-const Welcome = () => {
+const Welcome = ({ slideAway }) => {
   return (
     <section className="Welcome w-full h-full bg-white flex flex-col justify-between items-center">
       <div className="flex flex-col items-center">
@@ -12,6 +13,7 @@ const Welcome = () => {
           where tales are told.
         </h1>
       </div>
+      <ArrowRightIcon alignSelf="end" cursor="pointer" marginRight="20" boxSize={10} onClick={slideAway} />
       <footer>
         <p>Vasyliev Mykyta© 2024</p>
       </footer>
