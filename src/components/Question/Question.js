@@ -6,6 +6,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { randomSort } from '../../utils/rundom-sort';
 import VariantCard from '../VariantCard';
 import StorageService from '../../services/StorageService';
+import { motion } from 'framer-motion';
+import { QUESTION_ANIMATION_CONFIG } from '../../constants/routing-animation-config';
 
 const Question = () => {
   let maxPageCount = 5;
@@ -104,7 +106,12 @@ const Question = () => {
   const variants = buildVariantsView();
 
   return (
-    <section className="Question w-full h-full">
+    <motion.div
+      variants={QUESTION_ANIMATION_CONFIG}
+      initial="initial"
+      animate="final"
+      className="Question w-full h-full"
+    >
       <Progress value={time} className="timer" mb="24px" />
       <Flex
         className={`questions-container ${time >= 100 && !selectedVariant ? 'disabled' : ''} ${correctAnswer ? 'transparent' : ''}`}
@@ -116,7 +123,7 @@ const Question = () => {
         {variants}
       </Flex>
       <p className="question-text">{currentQuestion?.question?.text}</p>
-    </section>
+    </motion.div>
   );
 };
 

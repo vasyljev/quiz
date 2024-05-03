@@ -10,6 +10,7 @@ const Enter = () => {
   const navigate = useNavigate();
 
   const storeNameAndRedirect = () => {
+    localStorage.clear();
     StorageService.userName = name;
     questionsService.getQuestions().then((questions) => {
       questions.length = 5;

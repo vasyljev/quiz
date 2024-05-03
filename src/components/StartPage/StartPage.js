@@ -12,15 +12,6 @@ const StartPage = () => {
     setPageClass('slide-away');
   };
 
-  // useEffect(() => {
-  //   localStorage.clear();
-  //   const timer = setTimeout(() => {
-  //     setPageClass('slide-away');
-  //   }, 15000);
-  //
-  //   return () => clearTimeout(timer);
-  // }, []);
-
   return (
     <div className="StartPage">
       <div className={`page ${pageClass}`}>

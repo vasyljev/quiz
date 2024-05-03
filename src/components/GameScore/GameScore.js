@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './GameScore.scss';
 import { Flex } from '@chakra-ui/react';
 import StorageService from '../../services/StorageService';
+import { motion } from 'framer-motion';
+import { SCORE_ANIMATION_CONFIG, SCORE_TEXT_ANIMATION_CONFIG } from '../../constants/routing-animation-config';
 
 const GameScore = () => {
   const [score, setScore] = useState(0);
@@ -51,17 +53,19 @@ const GameScore = () => {
     setTextAccordingToResult(scoreValue, setQuestionsNumberValue);
   }, []);
   return (
-    <section className="GameScore w-full h-full">
-      <Flex align="center" justify="center" direction="column" pt={200}>
-        <h2 className="title">{name}!</h2>
-        <Flex className="text-block" align="center" justify="center" direction="column">
-          <p className="main-text">{resultText}</p>
-          <p className="main-text">
-            {score} / {questionsNumber}
-          </p>
+    <motion.div variants={SCORE_ANIMATION_CONFIG} initial="initial" animate="final" className="GameScore w-full h-full">
+      <motion.div variants={SCORE_TEXT_ANIMATION_CONFIG} initial="initial" animate="final">
+        <Flex align="center" justify="center" direction="column" pt={200}>
+          <h2 className="title">{name}!</h2>
+          <Flex className="text-block" align="center" justify="center" direction="column">
+            <p className="main-text">{resultText}</p>
+            <p className="main-text">
+              {score} / {questionsNumber}
+            </p>
+          </Flex>
         </Flex>
-      </Flex>
-    </section>
+      </motion.div>
+    </motion.div>
   );
 };
 

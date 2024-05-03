@@ -1,5 +1,7 @@
 import './Counter.scss';
 import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import { COUNTER_ANIMATION_CONFIG } from '../../constants/routing-animation-config';
 
 const Counter = ({ setShowCounter }) => {
   const [count, setCount] = useState(3);
@@ -16,9 +18,9 @@ const Counter = ({ setShowCounter }) => {
   }, [count, setShowCounter]);
 
   return (
-    <section className="Counter">
+    <motion.div variants={COUNTER_ANIMATION_CONFIG} initial="initial" animate="final" className="Counter">
       <p className="count-number">{count}</p>
-    </section>
+    </motion.div>
   );
 };
 

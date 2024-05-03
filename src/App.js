@@ -19,7 +19,7 @@ function App() {
           </Suspense>
         </BrowserRouter>
       </ChakraProvider>
-      <audio controls loop preload="auto">
+      <audio className="audio-el" controls loop preload="auto">
         <source src="/main-theme.mp3" type="audio/mpeg" />
       </audio>
     </>
