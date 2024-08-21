@@ -12,6 +12,9 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <div id="root">{children}</div>
+        <audio className="audio-el" controls loop preload="auto">
+          <source src="/main-theme.mp3" type="audio/mpeg" />
+        </audio>
       </body>
     </html>
   );
