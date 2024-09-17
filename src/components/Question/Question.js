@@ -1,18 +1,19 @@
+'use client';
+
 import React, { useEffect, useState } from 'react';
 import Counter from '../Counter';
 import './Question.scss';
 import { Flex, Progress } from '@chakra-ui/react';
-import { useNavigate, useParams } from 'react-router-dom';
 import { randomSort } from '../../utils/rundom-sort';
 import VariantCard from '../VariantCard';
 import StorageService from '../../services/StorageService';
 import { motion } from 'framer-motion';
 import { QUESTION_ANIMATION_CONFIG } from '../../constants/routing-animation-config';
+import { useRouter } from 'next/navigation';
 
-const Question = () => {
+const Question = ({ number: questionNumber }) => {
   let maxPageCount = 5;
-  const navigate = useNavigate();
-  const { number: questionNumber } = useParams();
+  const router = useRouter();
   const [showCounter, setShowCounter] = useState(true);
   const [time, setTime] = useState(0);
   const [selectedVariant, setSelectedVariant] = useState(null);
@@ -57,11 +58,11 @@ const Question = () => {
   const redirectToNextQuestion = () => {
     setTimeout(() => {
       if (questionNumber < maxPageCount) {
-        navigate(`/question/${+questionNumber + 1}`);
+        router.push(`/question/${+questionNumber + 1}`);
         resetState();
         return;
       }
-      navigate('/score');
+      router.push('/score');
     }, 4000);
   };
 

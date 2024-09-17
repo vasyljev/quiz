@@ -1,4 +1,5 @@
 import '../index.css';
+import { ChakraProvider } from '@chakra-ui/react';
 
 export default function RootLayout({ children }) {
   return (
@@ -11,7 +12,9 @@ export default function RootLayout({ children }) {
         <meta name="description" content="Web site created..." />
       </head>
       <body>
-        <div id="root">{children}</div>
+        <ChakraProvider>
+          <div id="root">{children}</div>
+        </ChakraProvider>
         <audio className="audio-el" controls loop preload="auto">
           <source src="/main-theme.mp3" type="audio/mpeg" />
         </audio>
