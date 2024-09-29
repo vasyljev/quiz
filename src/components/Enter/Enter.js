@@ -1,22 +1,30 @@
+'use client';
+
 import React, { useState } from 'react';
 import './Enter.scss';
 import { Button, Flex, Input } from '@chakra-ui/react';
-import questionsService from '../../services/QuestionsService';
 import StorageService from '../../services/StorageService';
 import { useRouter } from 'next/navigation';
+import { useQuery } from '@tanstack/react-query';
+import questionsService from '../../services/QuestionsService';
+
+export const useQuestionsQuery = () =>
+  useQuery({
+    queryKey: ['questions'],
+    queryFn: questionsService.getQuestions,
+  });
 
 const Enter = () => {
   const [name, setName] = useState('');
   const router = useRouter();
+  const { isPending, error, data: questions, isFetching } = useQuestionsQuery();
 
   const storeNameAndRedirect = () => {
     localStorage.clear();
     StorageService.userName = name;
-    questionsService.getQuestions().then((questions) => {
-      questions.length = 5;
-      StorageService.questions = questions;
-      router.push('question/1');
-    });
+    questions.length = 5;
+    StorageService.questions = questions;
+    router.push('question/1');
   };
 
   return (

@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useState } from 'react';
 import './GameScore.scss';
 import { Flex } from '@chakra-ui/react';
