@@ -17,7 +17,7 @@ export const useQuestionsQuery = () =>
 const Enter = () => {
   const [name, setName] = useState('');
   const router = useRouter();
-  const { isPending, error, data: questions, isFetching } = useQuestionsQuery();
+  const { data: questions } = useQuestionsQuery();
 
   const storeNameAndRedirect = () => {
     localStorage.clear();

@@ -1,0 +1,32 @@
+.dumbledore-container {
+  background-image: url('https://via.placeholder.com/800x600');
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.dumbledore-quotes {
+  font-style: italic;
+  font-size: 18px;
+  color: #8B9467;
+  margin-bottom: 20px;
+}
+
+.dumbledore-input-field {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #F7F7F7;
+}
+
+.dumbledore-send-button {
+  background-color: #337AB7;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
