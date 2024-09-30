@@ -1,14 +1,75 @@
-.dumbledore-container {
-  background-image: url('https://via.placeholder.com/800x600');
+.DumbledoreChat {
+  background: url("../../assets/images/USH_Wands_VB.jpg");
   background-size: cover;
+  color: white;
   padding: 20px;
-  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .chat-container {
+    border-radius: 10px;
+    padding: 24px;
+    height: calc(100% - 50px);
+    width: calc(100% - 50px);
+    background-color: rgba(255, 243, 243, 0.9);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+
+  .user-block {
+    background-color: rgb(244, 244, 244);
+    align-self: flex-end;
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 24px;
+  }
+
+  .title, .main-text {
+    font-family: "Lugrasimo", cursive !important;
+  }
+
+  .text-wrap {
+    display: flex;
+  }
+
+  .avatar {
+    margin-right: 10px;
+    padding-top: 5px;
+  }
+
+  .title {
+    font-size: 60px;
+    font-weight: 600;
+    padding-bottom: 19px;
+  }
+
+  .main-text {
+    font-size: 26px;
+    margin-bottom: 24px;
+    max-width: 1000px;
+    color: black;
+  }
+
+  .action-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.messages-list {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  margin-bottom: 10px;
 }
 
 .dumbledore-quotes {
-  font-style: italic;
   font-size: 18px;
-  color: #8B9467;
+  color: #4d513b;
   margin-bottom: 20px;
 }
 
@@ -19,6 +80,8 @@
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #F7F7F7;
+  color: black;
+  margin-bottom: 16px;
 }
 
 .dumbledore-send-button {

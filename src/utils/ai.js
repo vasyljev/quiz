@@ -15,20 +15,15 @@ export const generateChatResponse = async (chatMessages) => {
           content:
             'You are wise and venerable Headmaster of Hogwarts School of Witchcraft and Wizardry - Albus Dumbledore',
         },
+        {
+          role: 'user',
+          content: 'Hello, introduce your self.',
+        },
         ...chatMessages,
       ],
       model: 'gpt-4o-mini',
-      persona: {
-        name: 'Albus Dumbledore',
-        bio: 'Wise and venerable Headmaster of Hogwarts School of Witchcraft and Wizardry.',
-        quotes: [
-          'Happiness can be found even in the darkest of times if one only remembers to turn on the light.',
-          'It is not our abilities that show what we truly are, but our choices.',
-          'After all, to the well-organized mind, death is but the next great adventure.',
-        ],
-      },
-      temperature: 0,
-      max_tokens: 100,
+      temperature: 1,
+      max_tokens: 300,
     });
 
     console.log('response', response);

@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f6ed0cf-da68-4c45-b763-5dd6b5ac960e" name="Changes" comment="Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)">
-      <change afterPath="$PROJECT_DIR$/src/components/DumbledoreChat/DumbledoreChat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DumbledoreChat/DumbledoreChat.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DumbledoreChat/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/ai.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/chat/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/chat/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Enter/Enter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Enter/Enter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/rundom-sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/rundom-sort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DumbledoreChat/DumbledoreChat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DumbledoreChat/DumbledoreChat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DumbledoreChat/DumbledoreChat.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DumbledoreChat/DumbledoreChat.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/ai.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/ai.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +169,8 @@
       <workItem from="1724217844399" duration="645000" />
       <workItem from="1726549870753" duration="3166000" />
       <workItem from="1727539416157" duration="7668000" />
-      <workItem from="1727547468004" duration="11999000" />
+      <workItem from="1727547468004" duration="12639000" />
+      <workItem from="1727700392996" duration="3835000" />
     </task>
     <task id="LOCAL-00001" summary="Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)">
       <option name="closed" value="true" />
