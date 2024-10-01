@@ -1,16 +1,23 @@
 .DumbledoreChat {
-  background: url("../../assets/images/USH_Wands_VB.jpg");
+  background: url("../../assets/images/phoenix.jpg");
   background-size: cover;
   color: white;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+
+  .back-btn {
+    position: absolute;
+    top: 14px;
+    left: 24px;
+  }
 
   .chat-container {
     border-radius: 10px;
     padding: 24px;
-    height: calc(100% - 50px);
+    height: calc(100% - 70px);
     width: calc(100% - 50px);
     background-color: rgba(255, 243, 243, 0.9);
     display: flex;

@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import './StartPage.scss';
 import Welcome from '../Welcome';
 import Enter from '../Enter';
-import mediaService from '../../services/MediaService';
 import { dehydrate, HydrationBoundary, QueryClient } from '@tanstack/react-query';
 
 const StartPage = () => {
@@ -12,7 +11,7 @@ const StartPage = () => {
   const queryClient = new QueryClient();
 
   const slideWelcomePageAway = () => {
-    mediaService.playMainTheme();
+    // mediaService.playMainTheme();
     setPageClass('slide-away');
   };
 

@@ -4,14 +4,16 @@ import React, { useState } from 'react';
 import './DumbledoreChat.scss';
 import { useMutation } from '@tanstack/react-query';
 import { generateChatResponse } from '../../utils/ai';
+import { ArrowLeftIcon } from '@chakra-ui/icons';
+import { useRouter } from 'next/navigation';
 
 const DumbledoreChat = () => {
   const [text, setText] = useState('');
   const [messages, setMessages] = useState([]);
+  const router = useRouter();
   const { mutate, isPending } = useMutation({
     mutationFn: async () => {
       const response = await generateChatResponse(messages);
-      console.log('response 2', response);
       setMessages((prev) => [...prev, response.message]);
     },
   });
@@ -24,8 +26,13 @@ const DumbledoreChat = () => {
     mutate();
   };
 
+  const redirectBack = () => {
+    router.push('/');
+  };
+
   return (
     <div className="DumbledoreChat w-full h-full">
+      <ArrowLeftIcon cursor="pointer" boxSize={7} className="back-btn" onClick={redirectBack} />
       <div className="chat-container">
         <h2 className="dumbledore-quotes">
           "Welcome to our humble abode, where wisdom and wonder await." - Albus Dumbledore

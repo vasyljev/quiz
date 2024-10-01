@@ -6,6 +6,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  position: relative;
+
+  .chat-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
 
   .title {
     font-size: 34px;

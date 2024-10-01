@@ -27,8 +27,15 @@ const Enter = () => {
     router.push('question/1');
   };
 
+  const redirectToChat = () => {
+    router.push('chat');
+  };
+
   return (
     <section className="Enter">
+      <Button colorScheme="green" size="lg" className="chat-btn" onClick={redirectToChat}>
+        Dumbledore Chat
+      </Button>
       <Flex align="center" justify="center" direction="column" pt={200}>
         <Flex className="input-block" align="center" justify="center" direction="column">
           <p className="main-text">
