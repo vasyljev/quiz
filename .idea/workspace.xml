@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f6ed0cf-da68-4c45-b763-5dd6b5ac960e" name="Changes" comment="Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)">
-      <change afterPath="$PROJECT_DIR$/src/constants/routing-animation-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/rundom-sort.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Counter/Counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Counter/Counter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Enter/Enter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Enter/Enter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GameScore/GameScore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameScore/GameScore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Question/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Question/Question.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StartPage/StartPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StartPage/StartPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.setup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +40,29 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="next_js" />
+                    <option name="lastUsedInstant" value="1721798113" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1721798112" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="JsBowerSettings">
     <bower-package value="" />
@@ -67,7 +88,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;next__js&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/vassabigoldmann/Documents/Projects/React/quizz/public&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -77,8 +98,8 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/vassabigoldmann/Documents/Projects/React/quizz/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -90,6 +111,7 @@
       <recent name="$PROJECT_DIR$/src/components/Question" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
     </key>
   </component>
@@ -133,7 +155,25 @@
       <workItem from="1714451135001" duration="3961000" />
       <workItem from="1714623987496" duration="3711000" />
       <workItem from="1714629891280" duration="17000" />
-      <workItem from="1714710428891" duration="2386000" />
+      <workItem from="1714710428891" duration="2800000" />
+      <workItem from="1715056245699" duration="1087000" />
+      <workItem from="1715197521846" duration="383000" />
+      <workItem from="1715234496208" duration="5000" />
+      <workItem from="1717075229748" duration="988000" />
+      <workItem from="1717129599883" duration="6000" />
+      <workItem from="1717227361617" duration="150000" />
+      <workItem from="1717227517645" duration="951000" />
+      <workItem from="1717228476525" duration="398000" />
+      <workItem from="1717228880626" duration="123000" />
+      <workItem from="1717390577642" duration="9000" />
+      <workItem from="1717477907992" duration="987000" />
+      <workItem from="1721827483354" duration="8000" />
+      <workItem from="1723023590244" duration="2720000" />
+      <workItem from="1724217844399" duration="645000" />
+      <workItem from="1726549870753" duration="3166000" />
+      <workItem from="1727539416157" duration="7668000" />
+      <workItem from="1727547468004" duration="12639000" />
+      <workItem from="1727700392996" duration="20496000" />
     </task>
     <task id="LOCAL-00001" summary="Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)">
       <option name="closed" value="true" />
@@ -170,5 +210,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)" />
     <option name="LAST_COMMIT_MESSAGE" value="Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/StartPage/StartPage.js</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Enter/Enter.js</url>
+          <line>15</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

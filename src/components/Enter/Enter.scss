@@ -6,6 +6,20 @@
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  position: relative;
+
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .chat-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
 
   .title {
     font-size: 34px;

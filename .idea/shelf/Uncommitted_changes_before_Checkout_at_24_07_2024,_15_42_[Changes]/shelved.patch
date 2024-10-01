@@ -1,0 +1,103 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"2f6ed0cf-da68-4c45-b763-5dd6b5ac960e\" name=\"Changes\" comment=\"Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)\">\n      <change afterPath=\"$PROJECT_DIR$/src/constants/routing-animation-config.js\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/App.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/App.css\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/App.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/App.js\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/components/Counter/Counter.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/components/Counter/Counter.js\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/components/Enter/Enter.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/components/Enter/Enter.js\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/components/GameScore/GameScore.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/components/GameScore/GameScore.js\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/components/Question/Question.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/components/Question/Question.js\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/components/StartPage/StartPage.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/components/StartPage/StartPage.js\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FormatOnSaveOptions\">\n    <option name=\"myRunOnSave\" value=\"true\" />\n    <option name=\"myAllFileTypesSelected\" value=\"false\" />\n    <option name=\"mySelectedFileTypes\">\n      <set>\n        <option value=\"Angular2Html\" />\n        <option value=\"ECMAScript 6\" />\n        <option value=\"HTML\" />\n        <option value=\"JSX Harmony\" />\n        <option value=\"JavaScript\" />\n        <option value=\"SCSS\" />\n        <option value=\"Sass\" />\n        <option value=\"TypeScript\" />\n        <option value=\"TypeScript JSX\" />\n      </set>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitToolBoxStore\">\n    <option name=\"projectConfigVersion\" value=\"5\" />\n  </component>\n  <component name=\"JsBowerSettings\">\n    <bower-package value=\"\" />\n    <bower.json value=\"\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"OptimizeOnSaveOptions\">\n    <option name=\"myRunOnSave\" value=\"true\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 7\n}</component>\n  <component name=\"ProjectId\" id=\"2dDNQXhJPm4tzEx5e1eM2jVOch5\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/Users/vassabigoldmann/Documents/Projects/React/quizz/public&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/vassabigoldmann/Documents/Projects/React/quizz/node_modules/prettier&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,\n    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/public\" />\n      <recent name=\"$PROJECT_DIR$/src/services\" />\n      <recent name=\"$PROJECT_DIR$/src/components/Counter\" />\n      <recent name=\"$PROJECT_DIR$/src/components/Enter\" />\n      <recent name=\"$PROJECT_DIR$/src/components/Question\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/assets/images\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"2f6ed0cf-da68-4c45-b763-5dd6b5ac960e\" name=\"Changes\" comment=\"\" />\n      <created>1709538672399</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1709538672399</updated>\n      <workItem from=\"1709538673421\" duration=\"1544000\" />\n      <workItem from=\"1709541402304\" duration=\"4781000\" />\n      <workItem from=\"1709901466524\" duration=\"939000\" />\n      <workItem from=\"1710064432961\" duration=\"1954000\" />\n      <workItem from=\"1710169951512\" duration=\"1321000\" />\n      <workItem from=\"1710235640718\" duration=\"13000\" />\n      <workItem from=\"1711518865942\" duration=\"3133000\" />\n      <workItem from=\"1711524958135\" duration=\"2405000\" />\n      <workItem from=\"1711604352731\" duration=\"3590000\" />\n      <workItem from=\"1711946307577\" duration=\"4552000\" />\n      <workItem from=\"1711958987036\" duration=\"3272000\" />\n      <workItem from=\"1712118385893\" duration=\"3596000\" />\n      <workItem from=\"1712122489212\" duration=\"48000\" />\n      <workItem from=\"1712205673115\" duration=\"4838000\" />\n      <workItem from=\"1712237752556\" duration=\"1713000\" />\n      <workItem from=\"1712297622862\" duration=\"5000\" />\n      <workItem from=\"1713241635221\" duration=\"4188000\" />\n      <workItem from=\"1713247345287\" duration=\"3000\" />\n      <workItem from=\"1713328064766\" duration=\"4904000\" />\n      <workItem from=\"1713334043145\" duration=\"50000\" />\n      <workItem from=\"1713760032920\" duration=\"4331000\" />\n      <workItem from=\"1713766640470\" duration=\"4000\" />\n      <workItem from=\"1713846433154\" duration=\"3945000\" />\n      <workItem from=\"1713852803096\" duration=\"11000\" />\n      <workItem from=\"1714019993980\" duration=\"4161000\" />\n      <workItem from=\"1714105601140\" duration=\"3789000\" />\n      <workItem from=\"1714111600918\" duration=\"4000\" />\n      <workItem from=\"1714365072524\" duration=\"3721000\" />\n      <workItem from=\"1714370754897\" duration=\"45000\" />\n      <workItem from=\"1714451135001\" duration=\"3961000\" />\n      <workItem from=\"1714623987496\" duration=\"3711000\" />\n      <workItem from=\"1714629891280\" duration=\"17000\" />\n      <workItem from=\"1714710428891\" duration=\"2386000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1714369174317</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1714369174317</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"UnknownFeatures\">\n    <option featureType=\"dependencySupport\" implementationName=\"javascript:npm:react\" />\n    <option featureType=\"dependencySupport\" implementationName=\"javascript:npm:prettier\" />\n    <option featureType=\"dependencySupport\" implementationName=\"executable:docker\" />\n    <option featureType=\"dependencySupport\" implementationName=\"javascript:npm:tailwindcss\" />\n    <option featureType=\"dependencySupport\" implementationName=\"executable:kubectl\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,15 +5,7 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="2f6ed0cf-da68-4c45-b763-5dd6b5ac960e" name="Changes" comment="Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)">
+-      <change afterPath="$PROJECT_DIR$/src/constants/routing-animation-config.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/components/Counter/Counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Counter/Counter.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/components/Enter/Enter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Enter/Enter.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/components/GameScore/GameScore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameScore/GameScore.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/components/Question/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Question/Question.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/components/StartPage/StartPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StartPage/StartPage.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -38,6 +30,11 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="next_js" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="GitToolBoxStore">
+@@ -61,26 +58,26 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;/Users/vassabigoldmann/Documents/Projects/React/quizz/public&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/vassabigoldmann/Documents/Projects/React/quizz/node_modules/prettier&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "code.cleanup.on.save": "true",
++    "git-widget-placeholder": "main",
++    "last_opened_file_path": "/Users/vassabigoldmann/Documents/Projects/React/quizz/public",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.standard": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.standard": "",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "prettierjs.PrettierConfiguration.Package": "/Users/vassabigoldmann/Documents/Projects/React/quizz/node_modules/prettier",
++    "settings.editor.selected.configurable": "editing.templates",
++    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/public" />
+@@ -171,4 +168,16 @@
+     <MESSAGE value="Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)" />
+     <option name="LAST_COMMIT_MESSAGE" value="Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)" />
+   </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <line-breakpoint enabled="true" type="javascript">
++          <url>file://$PROJECT_DIR$/src/constants/routing-animation-config.js</url>
++          <line>4</line>
++          <properties lambdaOrdinal="-1" />
++          <option name="timeStamp" value="1" />
++        </line-breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
++  </component>
+ </project>
+\ No newline at end of file

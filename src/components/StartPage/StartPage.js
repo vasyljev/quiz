@@ -1,14 +1,17 @@
+'use client';
+
 import React, { useState } from 'react';
 import './StartPage.scss';
 import Welcome from '../Welcome';
 import Enter from '../Enter';
-import mediaService from '../../services/MediaService';
+import { dehydrate, HydrationBoundary, QueryClient } from '@tanstack/react-query';
 
 const StartPage = () => {
   const [pageClass, setPageClass] = useState('');
+  const queryClient = new QueryClient();
 
   const slideWelcomePageAway = () => {
-    mediaService.playMainTheme();
+    // mediaService.playMainTheme();
     setPageClass('slide-away');
   };
 
@@ -18,7 +21,9 @@ const StartPage = () => {
         <Welcome slideAway={slideWelcomePageAway} />
       </div>
       <div className={`behind-page ${pageClass === 'slide-away' ? 'appear' : ''}`}>
-        <Enter />
+        <HydrationBoundary state={dehydrate(queryClient)}>
+          <Enter />
+        </HydrationBoundary>
       </div>
     </div>
   );
