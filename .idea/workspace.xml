@@ -6,12 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2f6ed0cf-da68-4c45-b763-5dd6b5ac960e" name="Changes" comment="Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DumbledoreChat/DumbledoreChat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DumbledoreChat/DumbledoreChat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DumbledoreChat/DumbledoreChat.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DumbledoreChat/DumbledoreChat.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Enter/Enter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Enter/Enter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Enter/Enter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Enter/Enter.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StartPage/StartPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StartPage/StartPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Question/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Question/Question.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/ai.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/ai.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/rundom-sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/rundom-sort.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +172,7 @@
       <workItem from="1726549870753" duration="3166000" />
       <workItem from="1727539416157" duration="7668000" />
       <workItem from="1727547468004" duration="12639000" />
-      <workItem from="1727700392996" duration="8686000" />
+      <workItem from="1727700392996" duration="14673000" />
     </task>
     <task id="LOCAL-00001" summary="Added main theme audio&#10;&#10;(cherry picked from commit 70a9a01a5b13a18cc72a7d15ced30d5e49654586)">
       <option name="closed" value="true" />
@@ -218,6 +217,12 @@
           <url>file://$PROJECT_DIR$/src/components/StartPage/StartPage.js</url>
           <line>14</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Enter/Enter.js</url>
+          <line>15</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

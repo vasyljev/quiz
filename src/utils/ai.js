@@ -26,7 +26,6 @@ export const generateChatResponse = async (chatMessages) => {
       max_tokens: 300,
     });
 
-    console.log('response', response);
     return {
       message: response.choices[0].message,
       tokens: response.usage.total_tokens,

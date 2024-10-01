@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Counter from '../Counter';
 import './Question.scss';
 import { Flex, Progress } from '@chakra-ui/react';
-import { randomSort } from '../../utils/rundom-sort';
+import { randomSortArray } from '../../utils/rundom-sort';
 import VariantCard from '../VariantCard';
 import StorageService from '../../services/StorageService';
 import { motion } from 'framer-motion';
@@ -28,7 +28,8 @@ const Question = ({ number: questionNumber }) => {
     const question = questions[questionNumber - 1];
     setCurrentQuestion(question);
     const { correctAnswer: answer, incorrectAnswers } = question;
-    setSortedVariants(randomSort([...incorrectAnswers, answer]));
+    const sortedVariantsArray = randomSortArray([...incorrectAnswers, answer]);
+    setSortedVariants(sortedVariantsArray);
   };
 
   const resetState = () => {
